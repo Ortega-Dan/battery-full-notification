@@ -5,8 +5,9 @@ do
     battery_percent=$(acpi -b | grep -P -o '[0-9]+(?=%)')
     if on_ac_power; then
         if [ "$battery_percent" -gt 95 ]; then
-            notify-send -i "$PWD/batteryfull.png" "Battery full." "Level: ${battery_percent}% "
-            paplay /usr/share/sounds/ubuntu/ringtones/Alarm\ clock.ogg
+            notify-send -u critical "Battery fully charged"
+            paplay /usr/share/sounds/gnome/default/alerts/glass.ogg
+            paplay /usr/share/sounds/gnome/default/alerts/glass.ogg
         fi
     fi
     sleep 300 # (5 minutes)
