@@ -8,7 +8,7 @@ while true; do
     # echo $battery_percent
     if [ "$charging_status" == "Charging" ] || [ "$charging_status" == "" ] || [ "$charging_status" == "charging" ]
     then
-        if [ "$battery_percent" -gt 96 ]; then
+        if [ "$battery_percent" -gt 99 ]; then
             notify-send -u critical "Battery fully charged"
             paplay /usr/share/sounds/gnome/default/alerts/glass.ogg
             paplay /usr/share/sounds/gnome/default/alerts/glass.ogg

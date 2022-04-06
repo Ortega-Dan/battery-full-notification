@@ -6,9 +6,9 @@ while true; do
     # echo $battery_percent
     if [ "$nvidiahighcpu" == "1" ]; then
         notify-send -u critical "NVIDIA POWERD"
-        paplay /usr/share/sounds/gnome/default/alerts/glass.ogg
-        paplay /usr/share/sounds/gnome/default/alerts/glass.ogg
-        paplay /usr/share/sounds/gnome/default/alerts/glass.ogg
+        paplay /usr/share/sounds/gnome/default/alerts/drip.ogg
+        paplay /usr/share/sounds/gnome/default/alerts/drip.ogg
+        paplay /usr/share/sounds/gnome/default/alerts/drip.ogg
     fi
     sleep 120 # (2 minutes)
 done
